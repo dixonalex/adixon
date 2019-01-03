@@ -2,6 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import avatar from '../images/avatar.png'
 
+const HeadlineMargin = {
+	marginBottom: 0
+}
+
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
         <div className="logo" style={{overflow: "hidden"}}>
@@ -10,10 +14,9 @@ const Header = (props) => (
         <div className="content">
             <div className="inner">
                 <h1>Alex Dixon</h1>
-		<p>Full Stack Data Engineer<br />
-			Currently: AWS / Python / Postgres / Redshift<br />
-			Running & Biking Enthusiast
-		</p>
+		<p style={HeadlineMargin}>Full Stack Data Engineer</p>
+		<p style={HeadlineMargin}>AWS / Python / Postgres / Redshift</p>
+		<p style={HeadlineMargin}>Running & Biking Enthusiast</p>
             </div>
         </div>
         <nav>
